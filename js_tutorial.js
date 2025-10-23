@@ -61,3 +61,34 @@ p.name = "educosys";
 
 console.log(p);
 console.log(q);
+
+
+// Defines the function
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+// Calls the function
+console.log(greet("Alice")); // Output: Hello, Alice!
+
+// Defines the function as a variable 
+const multiply = function(a, b){
+    return a * b;
+}
+// Calls the function using the variable name 
+console.log("Output: " + multiply(5, 3)); // Output
+
+// Arrow function
+// Defines the arrow function
+const subtract = (p, q) => p - q;
+// Calls the function 
+console.log("Arrow function Output: " + subtract(10, 4));
+
+
+// If only one parameter, you can even omit the parentheses aroud it 
+const square = x => x * x;
+console.log(square(7)) // Output
+
+
+
+
