@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Js</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        // Function to create and append a new element with text
+        function addLine(tag, text) {
+            let el = document.createElement(tag);
+            el.textContent = text;
+            document.getElementById("container").appendChild(el);
+        }
+
+        // Messages
+        let message1 = "Welcome";
+        let message2 = "Test Completed";
+
+        // Log to console (optional)
+        console.log(message1);
+        console.log(message2);
+
+        // Add outputs to page
+        addLine("p", message1); // first paragraph
+        addLine("p", message2); // second paragraph
+        addLine("p", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste perspiciatis beatae consequuntur molestias rem totam magni quasi odio delectus! Fugiat.");
+
+        // Function result
+        function myfunction(a,b){
+            return a + b;
+        }
+        addLine("p", "Result of myfunction(6,4): " + myfunction(6,4));
+
+        // Heading
+        addLine("h1", "new text");
+        addLine("h1", "10 new text");
+    </script>
+</body>
+</html>

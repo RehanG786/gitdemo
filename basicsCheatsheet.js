@@ -27,3 +27,13 @@ let numberOfChickens = 6; //GOOD
 // NOT THE JS WAY:
 // let number_of_chickens = 6;
 console.log(numberOfChickens);
+
+let age = 16;
+let country = "USA";
+let text = "You can Not drive!";
+
+if(country == "USA"){
+    if (age >= 16){
+        text = "You can drive!";
+    }
+}
